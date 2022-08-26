@@ -45,6 +45,9 @@
 }
 
 /* Add the hover state styles for .nav__link here */
+.nav__link:hover {
+  color: #1f69c9;
+}
 
 .header__title {
   font-size: 66px;
@@ -65,6 +68,9 @@
   /* Write styles here */
   z-index: 1;
   max-width: 636px;
+  position: absolute;
+  top: 135px;
+  right: 20px;
 }
 
 .header__footer {
@@ -80,11 +86,14 @@
 }
 
 .header__link {
-  color: #2f80ed;
+  color: #1f69c9;
   text-decoration: none;
 }
 
 /* Add the hover state styles for .header__link here */
+.header__link:hover {
+  color: #1f69c9;
+}
 
 .header__address {
   margin: 0;
@@ -113,7 +122,17 @@
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
-
+.staff__block-container {
+  max-width: 760px;
+  margin-top: 68px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  gap: 40px;
+}
 .card {
   background-color: #fff;
   border-radius: 6px;
@@ -226,6 +245,9 @@
 }
 
 /* Add the hover state styles for .events__more here */
+.events__more:hover {
+  color: #1f69c9;
+}
 
 .events__cover {
   flex-grow: 1;
@@ -233,7 +255,6 @@
   flex-basis: 780px;
   max-width: 780px;
   position: relative;
-  border: 1px solid red;
 }
 
 .events__image {
@@ -246,7 +267,6 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  border: 1px solid red;
 }
 
 .person_name_feynman {
@@ -281,7 +301,6 @@
 
 .person__image {
   max-width: 100%;
-  border: solid 1px black;
 }
 
 .person__image_size_l {
@@ -319,13 +338,24 @@
 
 .membership__steps {
   list-style-type: none;
+  display: flex;
   padding: 0;
   margin: 100px 0 0;
   /* Add styles */
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .step {
   /* Add styles */
+  display: flex;
+  /* border: 1px solid black; */
+  max-width: 220px;
+  max-height: 110px;
+  /* gap: 40px; */
+  flex-direction: column;
+  flex-basis: content;
 }
 
 .step__title {
@@ -335,6 +365,7 @@
   font-weight: 700;
   display: flex;
   align-items: center;
+  align-content: flex-start;
 }
 
 .step__icon {
@@ -346,12 +377,15 @@
 }
 
 .about {
-  padding: 100px 80px;
+  margin: 0;
+  padding: 100px;
+  width: 100vw;
   background-color: #1f1f1f;
   color: #fff;
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: inline-flex;
 }
 
 .about__title {
@@ -361,6 +395,7 @@
   font-weight: 500;
   z-index: 1;
   max-width: 154px;
+  padding-right: 120px;
 }
 
 .about__content {
@@ -368,10 +403,12 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  z-index: 2;
 }
 
 .about__paragraph {
   margin: 0;
+  padding-bottom: 30px;
 }
 
 .about__circle {
@@ -379,22 +416,40 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  top: -30%;
+  left: -91px;
 }
 
 .footer {
   box-sizing: border-box;
+  background-color: #000000;
+  color: white;
+  vertical-align: top;
 }
 
 .footer__columns {
+  min-height: 224px;
+  border: 1x dotted red;
+  padding: 60px 102px 60px 80px;
+  display: flex;
+  justify-content: end;
 }
 
 .footer__column_content_hours {
+  padding-right: 50px;
+  margin-left: 800px;
+  margin-right: auto;
 }
 
 .footer__column_content_social {
+  padding-left: 50px;
 }
 
 .footer__logo {
+  height: 21px;
+  width: 121px;
 }
 
 .footer__list {
@@ -405,9 +460,12 @@
 }
 
 .footer__list-item {
+  padding-top: 20px;
+  padding-bottom: 16px;
 }
 
 .footer__column-heading {
+  width: 90px;
 }
 
 .footer__column-link {
@@ -418,7 +476,10 @@
 }
 
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .footer__copyright {
+  margin: 0;
 }

@@ -59,79 +59,78 @@
 
       <main class="content">
         <section id="staff_picks" class="staff">
-          <h2 class="staff__title">Staff picks</h2>
+          <h2 class="staff__title">Reader picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <!-- Wrap those cards! -->
           <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-          <ul>
-            <li class="card">
-              <div class="card__content">
-                <h3 class="card__title">Introduction to Algorithms</h3>
-                <p class="card__text">
-                  The name of this book is self-explanatory; it's a proper
-                  introduction to algorithms! Introduction to Algorithms, or
-                  CLRS, in reference to the authors' last names, goes in-depth
-                  and covers a range of algorithms across several self-contained
-                  chapters.
-                </p>
-                <p class="card__footer">
-                  Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
-                  Clifford Stein
-                </p>
-              </div>
-            </li>
 
-            <li class="card">
-              <div class="card__content">
-                <h3 class="card__title">
-                  The Structure and Interpretation of Computer Programs (SICP)
-                </h3>
-                <p class="card__text">
-                  This is one of the best books for learning the fundamentals of
-                  programming. Featured by MIT in one of their foundational
-                  programming courses, SICP is a general-purpose programming
-                  book that uses Scheme to illustrate various programming
-                  concepts.
-                </p>
-                <p class="card__footer">
-                  Harold Abelson, Gerald Jay Sussman, Julie Sussman
-                </p>
-              </div>
-            </li>
+            <ul>
+              <div class="staff__block-container">
+              <li class="card">
+                <div class="card__content">
+                  <h3 class="card__title">Siddhartha</h3>
+                  <p class="card__text">
+                    Reading this book during a challenging part of my life, led me to find peace with myself and those around me. A man starts in extravegant wealth and decides to leave his home in search for a greater purpose than what he was born into. I believe fate is not predetermined and we can change our outcome as much as we put the effort in - read and philosophize over the deeper meaning of what it means to be human.
+                  </p>
+                  <p class="card__footer">
+                    Hermann Hesse
+                  </p>
+                </div>
+              </li>
 
-            <li class="card">
-              <div class="card__content">
-                <h3 class="card__title">
-                  The Clean Coder: A Code of Conduct for Professional
-                  Programmers
-                </h3>
-                <p class="card__text">
-                  Compiled by seasoned software engineer and author Robert C.
-                  Martin (also known as Uncle Bob), this book covers the
-                  techniques and tools of true software craftsmanship. It
-                  explains how to write clean code and demonstrates how to
-                  cultivate the attitude of a skilled, professional programmer.
-                </p>
-                <p class="card__footer">Steve McConnell</p>
-              </div>
-            </li>
+              <li class="card">
+                <div class="card__content">
+                  <h3 class="card__title">
+                    The Structure and Interpretation of Computer Programs (SICP)
+                  </h3>
+                  <p class="card__text">
+                    This is one of the best books for learning the fundamentals
+                    of programming. Featured by MIT in one of their foundational
+                    programming courses, SICP is a general-purpose programming
+                    book that uses Scheme to illustrate various programming
+                    concepts.
+                  </p>
+                  <p class="card__footer">
+                    Harold Abelson, Gerald Jay Sussman, Julie Sussman
+                  </p>
+                </div>
+              </li>
 
-            <li class="card">
-              <div class="card__content">
-                <h3 class="card__title">
-                  Code Complete: A Practical Handbook of Software Construction
-                </h3>
-                <p class="card__text">
-                  Want to know how to write robust code irrespective of the
-                  architecture behind your chosen programming language? Then
-                  consider reading Code Complete: A Practical Handbook of
-                  Software Construction. It comprehensively covers everything
-                  related to good code structure.
-                </p>
-                <p class="card__footer">Steve McConnell</p>
-              </div>
-            </li>
-          </ul>
+              <li class="card">
+                <div class="card__content">
+                  <h3 class="card__title">
+                    The Clean Coder: A Code of Conduct for Professional
+                    Programmers
+                  </h3>
+                  <p class="card__text">
+                    Compiled by seasoned software engineer and author Robert C.
+                    Martin (also known as Uncle Bob), this book covers the
+                    techniques and tools of true software craftsmanship. It
+                    explains how to write clean code and demonstrates how to
+                    cultivate the attitude of a skilled, professional
+                    programmer.
+                  </p>
+                  <p class="card__footer">Steve McConnell</p>
+                </div>
+              </li>
+
+              <li class="card">
+                <div class="card__content">
+                  <h3 class="card__title">
+                    Code Complete: A Practical Handbook of Software Construction
+                  </h3>
+                  <p class="card__text">
+                    Want to know how to write robust code irrespective of the
+                    architecture behind your chosen programming language? Then
+                    consider reading Code Complete: A Practical Handbook of
+                    Software Construction. It comprehensively covers everything
+                    related to good code structure.
+                  </p>
+                  <p class="card__footer">Steve McConnell</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section id="events" class="events">
@@ -197,20 +196,22 @@
               />
             </div>
             <div class="person person_name_mitchell">
-              <p class="person__caption">Maria Mitchell</p>
+
               <img
                 class="person__image person__image_size_s"
                 src="./images/person_mitchell.png"
                 alt="Maria Mitchell image"
               />
+              <p class="person__caption">Maria Mitchell</p>
             </div>
             <div class="person person_name_cannon">
-              <p class="person__caption">Annie Jump Cannon</p>
+
               <img
                 class="person__image person__image_size_s"
                 src="./images/person_cannon.png"
                 alt="Annie Jump Cannon image"
               />
+              <p class="person__caption">Annie Jump Cannon</p>
             </div>
           </div>
         </section>
@@ -291,13 +292,34 @@
               the American Geophysical Union.
             </p>
           </div>
-          <!-- <div class="about__circle"></div> -->
+          <div class="about__circle"></div>
         </section>
       </main>
     </div>
 
     <footer id="footer" class="footer">
       <!-- The time to mark up the footer has come, you can do it 💪 -->
+      <div class="footer__columns">
+        <div class="footer-column">
+          <img class="footer__logo" src="./images/logo_white.png" alt="">
+        </div>
+        <div class="footer__column_content_hours">
+          <h4 class="footer__column-heading">Hours</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">Weekdays: 9am –8pm</li>
+              <li class="footer__list-item">Weekends: 10am –6pm</li>
+            </ul>
+        </div>
+        <div class="footer__column_content_social">
+          <h4 class="footer__column-heading">Social Media</h4>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#"><img class="footer__social-icon" src="./images/facebook_white.svg" alt=""></a></li>
+            <li class="footer__list-item"><a href="#"><img class="footer__social-icon" src="./images/instagram_white.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">@ 2022 Jared G</p>
+
     </footer>
   </body>
 </html>
