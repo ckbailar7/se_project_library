@@ -13,7 +13,6 @@
     <div class="page">
       <header class="header">
         <nav class="nav">
-          <div></div>
           <img
             src="./images/logo.png"
             alt="Practicum Library Logo"
@@ -63,18 +62,22 @@
           <p class="staff__subtitle">That our readers love</p>
           <!-- Wrap those cards! -->
           <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-
-            <ul>
-              <div class="staff__block-container">
+          <div class="staff__block-container">
+            <ul class="staff__cards">
               <li class="card">
                 <div class="card__content">
                   <h3 class="card__title">Siddhartha</h3>
                   <p class="card__text">
-                    Reading this book during a challenging part of my life, led me to find peace with myself and those around me. A man starts in extravegant wealth and decides to leave his home in search for a greater purpose than what he was born into. I believe fate is not predetermined and we can change our outcome as much as we put the effort in - read and philosophize over the deeper meaning of what it means to be human.
+                    Reading this book during a challenging part of my life, led
+                    me to find peace with myself and those around me. A man
+                    starts in extravegant wealth and decides to leave his home
+                    in search for a greater purpose than what he was born into.
+                    I believe fate is not predetermined and we can change our
+                    outcome as much as we put the effort in - read and
+                    philosophize over the deeper meaning of what it means to be
+                    human.
                   </p>
-                  <p class="card__footer">
-                    Hermann Hesse
-                  </p>
+                  <p class="card__footer">Hermann Hesse</p>
                 </div>
               </li>
 
@@ -196,7 +199,6 @@
               />
             </div>
             <div class="person person_name_mitchell">
-
               <img
                 class="person__image person__image_size_s"
                 src="./images/person_mitchell.png"
@@ -205,7 +207,6 @@
               <p class="person__caption">Maria Mitchell</p>
             </div>
             <div class="person person_name_cannon">
-
               <img
                 class="person__image person__image_size_s"
                 src="./images/person_cannon.png"
@@ -301,25 +302,42 @@
       <!-- The time to mark up the footer has come, you can do it 💪 -->
       <div class="footer__columns">
         <div class="footer-column">
-          <img class="footer__logo" src="./images/logo_white.png" alt="">
+          <img class="footer__logo" src="./images/logo_white.png" alt="" />
+          <p class="footer__copyright">@ 2022 Jared G</p>
         </div>
         <div class="footer__column_content_hours">
           <h4 class="footer__column-heading">Hours</h4>
-            <ul class="footer__list">
-              <li class="footer__list-item">Weekdays: 9am –8pm</li>
-              <li class="footer__list-item">Weekends: 10am –6pm</li>
-            </ul>
+          <ul class="footer__list">
+            <li class="footer__list-item">Weekdays: 9am –8pm</li>
+            <li class="footer__list-item">Weekends: 10am –6pm</li>
+          </ul>
         </div>
         <div class="footer__column_content_social">
           <h4 class="footer__column-heading">Social Media</h4>
           <ul class="footer__list">
-            <li class="footer__list-item"><a href="#"><img class="footer__social-icon" src="./images/facebook_white.svg" alt=""></a></li>
-            <li class="footer__list-item"><a href="#"><img class="footer__social-icon" src="./images/instagram_white.svg" alt=""></a></li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__column-link"
+                ><img
+                  class="footer__social-icon"
+                  src="./images/facebook_white.svg"
+                  alt=""
+                />
+                Facebook</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__column-link"
+                ><img
+                  class="footer__social-icon"
+                  src="./images/instagram_white.svg"
+                  alt=""
+                />
+                Instagram</a
+              >
+            </li>
           </ul>
         </div>
       </div>
-      <p class="footer__copyright">@ 2022 Jared G</p>
-
     </footer>
   </body>
 </html>

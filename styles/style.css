@@ -20,8 +20,8 @@
 .nav {
   /* Add flex properties here */
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -106,6 +106,11 @@
   background-color: #f2f2f2;
 }
 
+.staff__block-container {
+  display: flex;
+  justify-content: center;
+}
+
 .staff__title {
   text-align: center;
   font-size: 44px;
@@ -122,16 +127,15 @@
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
-.staff__block-container {
+
+.staff__cards {
   max-width: 760px;
-  margin-top: 68px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 60px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
+  flex-flow: row wrap;
   gap: 40px;
+  justify-content: center;
+  list-style: none;
 }
 .card {
   background-color: #fff;
@@ -145,8 +149,6 @@
 .card__content {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .card__title {
@@ -424,32 +426,48 @@
 
 .footer {
   box-sizing: border-box;
-  background-color: #000000;
+  background-color: #1f1f1f;
   color: white;
+  /* border: 2px solid red; */
   vertical-align: top;
+  display: flex;
+}
+
+.footer__column {
+  /* margin: auto; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .footer__columns {
   min-height: 224px;
-  border: 1x dotted red;
+  width: 100vw;
   padding: 60px 102px 60px 80px;
+  flex-direction: row;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 .footer__column_content_hours {
-  padding-right: 50px;
-  margin-left: 800px;
-  margin-right: auto;
+  /* padding-right: 50px; */
+  /* margin-right: auto; */
+  justify-content: flex-end;
 }
 
 .footer__column_content_social {
-  padding-left: 50px;
+  width: 200px;
+  /* padding-left: 50px; */
+  margin-left: 100px;
+  justify-content: flex-end;
 }
 
 .footer__logo {
   height: 21px;
   width: 121px;
+  margin-right: auto;
+  margin-bottom: 200px;
 }
 
 .footer__list {
@@ -465,7 +483,6 @@
 }
 
 .footer__column-heading {
-  width: 90px;
 }
 
 .footer__column-link {
@@ -478,6 +495,8 @@
 .footer__social-icon {
   width: 16px;
   height: 16px;
+  color: white;
+  padding-right: 10px;
 }
 
 .footer__copyright {
