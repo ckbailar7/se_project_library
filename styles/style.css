@@ -1,10 +1,13 @@
 /* Add your class here */
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
   font-family: "Helvetica Neue", Arail, sans-serif;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
+  overflow: hidden;
 }
 .header {
   height: 100vh;
@@ -431,14 +434,15 @@
   /* border: 2px solid red; */
   vertical-align: top;
   display: flex;
+  font-family: "Helvetica Neue", Arail, sans-serif;
 }
 
 .footer__column {
-  /* margin: auto; */
+  margin-right: 700px;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .footer__columns {
@@ -447,12 +451,11 @@
   padding: 60px 102px 60px 80px;
   flex-direction: row;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .footer__column_content_hours {
-  /* padding-right: 50px; */
-  /* margin-right: auto; */
+  margin-left: auto;
   justify-content: flex-end;
 }
 
