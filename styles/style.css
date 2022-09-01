@@ -126,7 +126,8 @@
   margin-right: auto;
   margin-left: auto;
   flex-flow: row wrap;
-
+  margin-bottom: 0;
+  padding-left: 0;
   justify-content: center;
   gap: 40px;
   list-style: none;
@@ -490,6 +491,4 @@
 
 .footer__copyright {
   margin: 0;
-  left: 0;
-  bottom: 0;
 }
