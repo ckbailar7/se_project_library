@@ -122,8 +122,9 @@
 .staff__cards {
   display: flex;
   max-width: 760px;
-  margin: 68px 0 0 0;
-
+  margin-top: 68px;
+  margin-right: auto;
+  margin-left: auto;
   flex-flow: row wrap;
 
   justify-content: center;
@@ -395,8 +396,8 @@
   padding-bottom: 30px;
 }
 
-.about__paragraph::after {
-  padding-bottom: 0;
+.about__paragraph:last-child {
+  padding: 0;
 }
 
 .about__circle {
@@ -414,8 +415,8 @@
   box-sizing: border-box;
   background-color: #1f1f1f;
   color: white;
+  padding: 60px 102px 60px 80px;
   vertical-align: top;
-  display: flex;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -426,7 +427,7 @@
 
 .footer__columns {
   min-height: 224px;
-  padding: 60px 102px 60px 80px;
+
   flex-direction: row;
   display: flex;
   justify-content: flex-start;
@@ -451,17 +452,17 @@
 
 .footer__list {
   list-style-type: none;
-  padding-top: 20px 0 0 0;
+  padding: 20px 0 0 0;
 
   margin: 0;
 }
 
 .footer__list-item {
-  padding-top: 20px;
+  padding-bottom: 16px;
 }
 
 .footer__list-item:last-child {
-  padding-bottom: 16px;
+  padding-bottom: 0;
 }
 
 .footer__column-heading {
@@ -489,7 +490,6 @@
 
 .footer__copyright {
   margin: 0;
-  position: absolute;
   left: 0;
-  bottom: 10px;
+  bottom: 0;
 }
